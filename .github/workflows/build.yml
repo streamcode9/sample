@@ -14,4 +14,4 @@ jobs:
             otp-version: '26'
             rebar3-version: '3.22.0'
         - run: rebar3 get-deps
-        - run: rebar3 shell
+        # - run: rebar3 shell
