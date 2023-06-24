@@ -1,0 +1,16 @@
+
+name: dotnet budget calculator
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dotnet-version: [ '6.0.x' ]
+
+    steps:
+        - name: Setup Erlang/OTP with optional Elixir (and mix) and/or rebar3
+        - uses: erlef/setup-beam@v1.16.0
